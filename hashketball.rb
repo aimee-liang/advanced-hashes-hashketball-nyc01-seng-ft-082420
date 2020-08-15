@@ -127,7 +127,16 @@ def game_hash
 end
 
 # Write code here
+def team_colors (team_name)
+  colors_array = []
 
+  if team_name == "Charlotte Hornets"
+    colors_array << game_hash[:away][:colors]
+  elsif team_name == "Brooklyn Nets"
+    colors_array << game_hash[:home][:colors]
+  end
+  return colors_array
+end
 
 def big_shoe_rebounds
   # create a variable to store a shoe size to compare as we iterate 
