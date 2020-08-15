@@ -129,17 +129,16 @@ end
 # Write code here
 def team_colors (team_name)
   if team_name == "Charlotte Hornets"
-    colors_array << game_hash[:away][:colors]
+    return game_hash[:away][:colors]
   elsif team_name == "Brooklyn Nets"
-    colors_array << game_hash[:home][:colors]
+    return [:home][:colors]
   end
-  return colors_array
 end
+
 
 def big_shoe_rebounds
   shoe_size = 0
   player_num_of_rebounds = 0
-  # iterate through game hash
   game_hash.values.each do |team_data|
     team_data[:players].each do |player|
       if player[:shoe] > shoe_size
