@@ -147,11 +147,13 @@ def team_colors (team_name)
   end
 end
 
+
 def team_names
   game_hash.map do |team, team_data|
     team_data[:team_name]
   end
 end
+
 
 def player_numbers(team_name)
   numbers_array = []
@@ -167,6 +169,18 @@ def player_numbers(team_name)
     end
 end
 return numbers_array
+end
+
+
+def player_stats(player_name)
+  game_hash.keys.each do |team_data|
+    team_data[:players].each do |player|
+      if player.has_value?(player_name)
+        player.delete(:player_name)
+        return player
+      end
+    end 
+  end
 end
 
 
