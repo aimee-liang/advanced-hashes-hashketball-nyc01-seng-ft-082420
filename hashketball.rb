@@ -127,6 +127,18 @@ def game_hash
 end
 
 # Write code here
+
+def shoe_size(player_name)
+  game_hash.values.each do |team_data|
+    team_data[:players].each do |players|
+      if player.has_value?(player_name)
+        return player[:shoe]
+      end
+    end
+  end
+end
+
+
 def team_colors (team_name)
   if team_name == "Charlotte Hornets"
     return game_hash[:away][:colors]
