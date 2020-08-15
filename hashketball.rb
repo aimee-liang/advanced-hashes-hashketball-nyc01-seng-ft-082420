@@ -153,7 +153,13 @@ def team_names
   end
 end
 
-
+def player_numbers(team_name)
+  game_hash.each do |team, team_data|
+    if team_data.has_value?(team)
+    return team_data[:players].map{|player| player[:number]}
+    end
+end
+end
 
 
 def big_shoe_rebounds
