@@ -128,7 +128,7 @@ end
 
 # Write code here
 def player_stats(player_name)
-  game_hash
+  game_hash.values.each do ||
 end
 
 def big_shoe_rebounds
