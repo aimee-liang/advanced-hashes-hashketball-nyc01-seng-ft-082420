@@ -127,11 +127,7 @@ def game_hash
 end
 
 # Write code here
-def player_stats(player_name)
-  game_hash.values.each do |team_data|
-    
-  end
-end
+
 
 def big_shoe_rebounds
   # create a variable to store a shoe size to compare as we iterate 
