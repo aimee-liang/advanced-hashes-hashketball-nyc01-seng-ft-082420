@@ -127,7 +127,9 @@ def game_hash
 end
 
 # Write code here
-
+def player_stats(player_name)
+  game_hash
+end
 
 def big_shoe_rebounds
   # create a variable to store a shoe size to compare as we iterate 
