@@ -156,7 +156,6 @@ end
 def player_numbers(team_name)
   game_hash.each do |team, team_data|
     team_data.each do |team|
-    return team_data[:players].map{|player| player[:number]}
     end
 end
 end
