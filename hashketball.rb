@@ -128,8 +128,6 @@ end
 
 # Write code here
 def team_colors (team_name)
-  colors_array = []
-
   if team_name == "Charlotte Hornets"
     colors_array << game_hash[:away][:colors]
   elsif team_name == "Brooklyn Nets"
