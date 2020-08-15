@@ -133,6 +133,7 @@ def num_points_scored(player_name)
       return players[:points].to_i if player.has_value?(player_name)
       end
     end
+    end
 end
 
 
