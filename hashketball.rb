@@ -160,7 +160,7 @@ def player_numbers(team_name)
       team_data.each do |key, value|
         if key == :players
           value.each do |player|
-            numbers_array.push()
+            numbers_array.push(player[:number])
           end
         end
       end
