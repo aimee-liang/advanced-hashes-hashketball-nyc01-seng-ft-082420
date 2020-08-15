@@ -137,9 +137,7 @@ def team_colors (team_name)
 end
 
 def big_shoe_rebounds
-  # create a variable to store a shoe size to compare as we iterate 
   shoe_size = 0
-  # create a variable to store player's rebound 
   player_num_of_rebounds = 0
   # iterate through game hash
   game_hash.values.each do |team_data|
