@@ -137,13 +137,9 @@ end
 
 
 def shoe_size(player_name)
-  # iterate through game hash
   game_hash.values.each do |team_data|
-    # go into team data hash to the players hash
     team_data[:players].each do |players|
-      # does the value match the player's name?
-      if player.has_value?(player_name)
-        return player[:shoe]
+      return players[:shoe]if player.has_value?(player_name)
       end
     end
   end
